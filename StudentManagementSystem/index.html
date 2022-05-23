@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #navbar {
+        display: flex;
+    }
+    #adjust {
+        width: 70%;
+    }
+    input{
+        width: 300px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
+    form{
+        margin-top: 40px;
+        /* margin-left: 40%; */
+    }
+    h1{
+        color: cadetblue;
+        text-align: center;
+        margin-top: 150px;
+    }
+    button{
+        border: none;
+        color: white;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: cadetblue;
+    }
+</style>
+<body>
+    <div id="navbar">
+        <p id="plan"></p>
+    </div>
+
+    <button><a href="dashboard.html">Dashboard</a></button>
+
+    <h1>Add Student's Data</h1>
+    <form id="studentsData" onsubmit="storeData(event)">
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="course" placeholder="Course">
+        <input type="text" id="image" placeholder="Image_url">
+        <input type="text" id="unit" placeholder="Unit">
+        <input type="number" id="batch" placeholder="Ft-web batch no.">
+        <input type="submit" />
+    </form>
+</body>
+</html>
+<script src="index.js"></script>

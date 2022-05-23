@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        color: cadetblue;
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+    #container {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        
+    }
+    img{
+        /* border: 2px solid rgb(227, 176, 176); */
+        width: 250px;
+        height: 280px;
+    }
+    #navbar{
+        /* border: 1px solid rgb(194, 170, 170); */
+        text-align:right;
+        padding-right: 30px;
+        color: rgb(82, 130, 132);
+        font-weight: bold;
+        font-size: large;
+        background-color: rgb(240, 220, 194);
+        display: flex;
+        justify-content:space-between;
+    }
+    #back{
+        border: none;
+        background: none;
+        font-weight: bold;
+        font-size:medium;
+ 
+
+    }
+
+    
+</style>
+<body>
+   
+
+    <div id="navbar">
+        <button id="back"><a href="index.html">Back</a></button>
+        <p id="plan"></p>
+
+    </div>
+
+    <h1>Welcome to Masai!</h1>
+
+    <div id="container"></div>
+</body>
+</html>
+<script src="dashboard.js"></script>
